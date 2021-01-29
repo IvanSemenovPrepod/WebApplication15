@@ -1,0 +1,27 @@
+﻿@model WebApplication15.Models.tablephonebook
+@{
+    ViewBag.Title = "Добавление пользователя";
+}
+    <div class="container col-md-6">
+        <form asp-action="create" asp-controller="home">
+            <div class="form-group">
+                <label asp-for="im" class="control-label">Имя</label>
+                <input type="text" asp-for="im" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="fm" class="control-label">Фамилия</label>
+                <input type="text" asp-for="fm" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="ot" class="control-label">Отчество</label>
+                <input type="text" asp-for="ot" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="phone" class="control-label">Телефон</label>
+                <input type="text" asp-for="phone" class="form-control" />
+            </div>
+            <div class="form-group text-center">
+                <input type="submit" value="Создать" class="btn btn-link" />
+            </div>
+        </form>
+    </div>

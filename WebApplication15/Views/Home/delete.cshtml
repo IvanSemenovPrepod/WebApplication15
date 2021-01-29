@@ -1,0 +1,11 @@
+﻿@model WebApplication15.Models.tablephonebook
+
+<h3>Вы действительно хотите удалить данную модель?</h3>
+<div>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <input type="submit" value="Удалить" />
+    }
+</div>
